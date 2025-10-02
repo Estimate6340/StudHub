@@ -1,0 +1,17 @@
+﻿# dotnet
+bin/
+obj/
+.vs/
+
+# Rider / IntelliJ
+.idea/
+*.iml
+
+# Java
+target/
+
+# Docker
+docker-compose.override.yml
+
+# OS
+.DS_Store

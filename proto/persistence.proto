@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+package persistence;
+option csharp_namespace = "Persistence.Grpc";
+
+message GetRequest {string id = 1;}
+message GetResponse {string id = 1; string data = 2;}
+
+service PersistenceService {
+  rpc GetEntity(GetRequest) returns (GetResponse);
+}
